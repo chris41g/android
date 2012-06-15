@@ -7,7 +7,9 @@
   <remote  name="github"
            fetch=".."
            review="review.cyanogenmod.com" />
-
+  <remote  name="github1"
+           fetch="git://github.com/" />
+  
   <default revision="refs/heads/ics"
            remote="github"
            sync-j="4" />
@@ -23,7 +25,7 @@
   <project path="dalvik" name="CyanogenMod/android_dalvik" />
   <project path="development" name="CyanogenMod/android_development" />
   <project path="device/common" name="device/common" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
-  <project path="device/samsung/epic4gtouch" name="chris41g/android_device_samsung_epic4gtouch" revision="master"/>
+  <project path="device/samsung/epic4gtouch" name="chris41g/android_device_samsung_epic4gtouch" remote="github1" revision="master"/>
   <project path="external/android-mock" name="platform/external/android-mock" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
   <project path="external/antlr" name="platform/external/antlr" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
   <project path="external/apache-harmony" name="platform/external/apache-harmony" remote="aosp" revision="refs/tags/android-4.0.4_r2.1" />
@@ -253,7 +255,7 @@
   <project path="vendor/tmobile/libs/com.tmobile.themes" name="CyanogenMod/android_vendor_tmobile_libs_com.tmobile.themes" />
   <project path="vendor/tmobile/providers/ThemeManager" name="CyanogenMod/android_vendor_tmobile_providers_ThemeManager" />
   <project path="vendor/tmobile/products/themes" name="CyanogenMod/android_vendor_tmobile_products_themes" />
-  <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" />
+  <project path="vendor/samsung" name="koush/proprietary_vendor_samsung" remote="github1"/>
   <project path="sdk" name="CyanogenMod/android_sdk" />
   <project path="system/bluetooth" name="CyanogenMod/android_system_bluetooth" />
   <project path="system/core" name="CyanogenMod/android_system_core" />
